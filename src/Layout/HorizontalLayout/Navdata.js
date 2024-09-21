@@ -7,12 +7,12 @@ const Navdata = () => {
   const [component, setcomponent] = useState(false);
   const [form, setform] = useState(false);
   const [table, settable] = useState(false);
-  const [chart, setchart] = useState(false);
-  const [icon, seticon] = useState(false);
+  // const [chart, setchart] = useState(false);
+  // const [icon, seticon] = useState(false);
   const [map, setmap] = useState(false);
   const [pages, setpages] = useState(false);
-  const [auth, setauth] = useState(false);
-  const [utility, setutility] = useState(false);
+  // const [auth, setauth] = useState(false);
+  // const [utility, setutility] = useState(false);
 
   const NavnavData = [
     {
@@ -114,8 +114,8 @@ const Navdata = () => {
         setmap(false);
         setform(false);
         settable(false);
-        setchart(false);
-        seticon(false);
+        // setchart(false);
+        // seticon(false);
       },
       currentState: component,
       subItems: [
@@ -124,8 +124,8 @@ const Navdata = () => {
           staclick: function () {
             setform(!form);
             settable(false);
-            setchart(false);
-            seticon(false);
+            // setchart(false);
+            // seticon(false);
             setmap(false);
 
             setui(false);
@@ -150,8 +150,8 @@ const Navdata = () => {
           staclick: function () {
             settable(!table);
             setform(false);
-            setchart(false);
-            seticon(false);
+            // setchart(false);
+            // seticon(false);
             setmap(false);
 
             setui(false);
@@ -166,51 +166,51 @@ const Navdata = () => {
           ],
         },
 
-        {
-          label2: "Charts",
-          staclick: function () {
-            setchart(!chart);
-            setform(false);
-            settable(false);
-            seticon(false);
-            setmap(false);
+        // {
+        //   label2: "Charts",
+        //   staclick: function () {
+        //     setchart(!chart);
+        //     setform(false);
+        //     settable(false);
+        //     seticon(false);
+        //     setmap(false);
 
-            setui(false);
-            setapp(false);
-            setpages(false);
-          },
-          subState: chart,
-          subItem: [
-            { link: "/chart-apexcharts", title: "Apex Charts" },
-            { link: "/chart-chartjscharts", title: "Chartjs" },
-            { link: "/chart-floatcharts", title: "RE Charts" },
-            { link: "/chart-jknobcharts", title: "Knob Charts" },
-            { link: "/chart-sparklinecharts", title: "Sparkline Charts" },
-          ],
-        },
+        //     setui(false);
+        //     setapp(false);
+        //     setpages(false);
+        //   },
+        //   subState: chart,
+        //   subItem: [
+        //     { link: "/chart-apexcharts", title: "Apex Charts" },
+        //     { link: "/chart-chartjscharts", title: "Chartjs" },
+        //     { link: "/chart-floatcharts", title: "RE Charts" },
+        //     { link: "/chart-jknobcharts", title: "Knob Charts" },
+        //     { link: "/chart-sparklinecharts", title: "Sparkline Charts" },
+        //   ],
+        // },
 
-        {
-          label2: "Icons",
-          staclick: function () {
-            seticon(!icon);
+        // {
+        //   label2: "Icons",
+        //   staclick: function () {
+        //     seticon(!icon);
 
-            setform(false);
-            settable(false);
-            setchart(false);
-            setmap(false);
+        //     setform(false);
+        //     settable(false);
+        //     setchart(false);
+        //     setmap(false);
 
-            setui(false);
-            setapp(false);
-            setpages(false);
-          },
-          subState: icon,
-          subItem: [
-            { link: "/icon-boxicon", title: "BoxIcons" },
-            { link: "/icons-materialdesign", title: "Material Design" },
-            { link: "/icon-dripicons", title: "Dripicons" },
-            { link: "/icons-fontawesome", title: "Font Awesome" },
-          ],
-        },
+        //     setui(false);
+        //     setapp(false);
+        //     setpages(false);
+        //   },
+        //   subState: icon,
+        //   subItem: [
+        //     { link: "/icon-boxicon", title: "BoxIcons" },
+        //     { link: "/icons-materialdesign", title: "Material Design" },
+        //     { link: "/icon-dripicons", title: "Dripicons" },
+        //     { link: "/icons-fontawesome", title: "Font Awesome" },
+        //   ],
+        // },
 
         {
           label2: "Maps",
@@ -218,8 +218,8 @@ const Navdata = () => {
             setmap(!map);
             setform(false);
             settable(false);
-            setchart(false);
-            seticon(false);
+            // setchart(false);
+            // seticon(false);
 
             setui(false);
             setapp(false);
@@ -243,52 +243,52 @@ const Navdata = () => {
         setapp(false);
         setcomponent(false);
 
-        setutility(false);
-        setauth(false);
+        // setutility(false);
+        // setauth(false);
       },
       currentState: pages,
       subItems: [
         {
-          label2: "Authentication",
+          // label2: "Authentication",
 
-          staclick: function () {
-            setauth(!auth);
-            setutility(false);
+          // staclick: function () {
+          //   setauth(!auth);
+          //   setutility(false);
 
-            setui(false);
-            setapp(false);
-            setcomponent(false);
-          },
-          subState: auth,
-          subItem: [
-            { link: "/auth-login", title: "Login" },
-            { link: "/auth-register", title: "Register" },
-            { link: "/auth-recoverpw", title: "Recover Password" },
-            { link: "/auth-lock-screen", title: "Lock Screen" },
-          ],
+          //   setui(false);
+          //   setapp(false);
+          //   setcomponent(false);
+          // },
+          // subState: auth,
+          // subItem: [
+          //   { link: "/auth-login", title: "Login" },
+          //   { link: "/auth-register", title: "Register" },
+          //   { link: "/auth-recoverpw", title: "Recover Password" },
+          //   { link: "/auth-lock-screen", title: "Lock Screen" },
+          // ],
         },
-        {
-          label2: "Utility",
-          staclick: function () {
-            setutility(!utility);
-            setauth(false);
+        // {
+        //   label2: "Utility",
+        //   staclick: function () {
+        //     setutility(!utility);
+        //     setauth(false);
 
-            setui(false);
-            setapp(false);
-            setcomponent(false);
-          },
-          subState: utility,
-          subItem: [
-            { link: "/pages-starter", title: "Starter Page" },
-            { link: "/pages-maintenance", title: "Maintenance" },
-            { link: "/pages-comingsoon", title: "Coming Soon" },
-            { link: "/pages-timeline", title: "Timeline" },
-            { link: "/pages-faqs", title: "FAQs" },
-            { link: "/pages-pricing", title: "Pricing" },
-            { link: "/pages-404", title: "Error 404" },
-            { link: "/pages-500", title: "Error 500" },
-          ],
-        },
+        //     setui(false);
+        //     setapp(false);
+        //     setcomponent(false);
+        //   },
+        //   subState: utility,
+        //   subItem: [
+        //     { link: "/pages-starter", title: "Starter Page" },
+        //     { link: "/pages-maintenance", title: "Maintenance" },
+        //     { link: "/pages-comingsoon", title: "Coming Soon" },
+        //     { link: "/pages-timeline", title: "Timeline" },
+        //     { link: "/pages-faqs", title: "FAQs" },
+        //     { link: "/pages-pricing", title: "Pricing" },
+        //     { link: "/pages-404", title: "Error 404" },
+        //     { link: "/pages-500", title: "Error 500" },
+        //   ],
+        // },
       ],
     },
   ];

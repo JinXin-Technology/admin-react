@@ -73,63 +73,63 @@ const BasicTable = () => {
             selector: row => row.createDate,
             sortable: true
         },
-        {
-            name: <span className='font-weight-bold fs-13'>Status</span>,
-            sortable: true,
-            selector: (cell) => {
-                switch (cell.status) {
-                    case "Re-open":
-                        return <span className="badge badge-soft-info"> {cell.status} </span>;
-                    case "On-Hold":
-                        return <span className="badge badge-soft-secondary"> {cell.status} </span>;
-                    case "Closed":
-                        return <span className="badge badge-soft-danger"> {cell.status} </span>;
-                    case "Inprogress":
-                        return <span className="badge badge-soft-warning"> {cell.status} </span>;
-                    case "Open":
-                        return <span className="badge badge-soft-primary"> {cell.status} </span>;
-                    case "New":
-                        return <span className="badge badge-soft-success"> {cell.status} </span>;
-                    default:
-                        return <span className="badge badge-soft-success"> {cell.status} </span>;
-                }
-            },
-        },
-        {
-            name: <span className='font-weight-bold fs-13'>Priority</span>,
-            sortable: true,
-            selector: (cell) => {
-                switch (cell.priority) {
-                    case "High":
-                        return <span className="badge bg-danger"> {cell.priority} </span>;
-                    case "Medium":
-                        return <span className="badge bg-info"> {cell.priority} </span>;
-                    case "Low":
-                        return <span className="badge bg-success"> {cell.priority} </span>;
-                    default:
-                        return <span className="badge bg-danger"> {cell.priority} </span>;
-                }
-            },
-        },
-        {
-            name: <span className='font-weight-bold fs-13'>Action</span>,
-            sortable: true,
+        // {
+        //     name: <span className='font-weight-bold fs-13'>Status</span>,
+        //     sortable: true,
+        //     selector: (cell) => {
+        //         switch (cell.status) {
+        //             case "Re-open":
+        //                 return <span className="badge badge-soft-info"> {cell.status} </span>;
+        //             case "On-Hold":
+        //                 return <span className="badge badge-soft-secondary"> {cell.status} </span>;
+        //             case "Closed":
+        //                 return <span className="badge badge-soft-danger"> {cell.status} </span>;
+        //             case "Inprogress":
+        //                 return <span className="badge badge-soft-warning"> {cell.status} </span>;
+        //             case "Open":
+        //                 return <span className="badge badge-soft-primary"> {cell.status} </span>;
+        //             case "New":
+        //                 return <span className="badge badge-soft-success"> {cell.status} </span>;
+        //             default:
+        //                 return <span className="badge badge-soft-success"> {cell.status} </span>;
+        //         }
+        //     },
+        // },
+        // {
+        //     name: <span className='font-weight-bold fs-13'>Priority</span>,
+        //     sortable: true,
+        //     selector: (cell) => {
+        //         switch (cell.priority) {
+        //             case "High":
+        //                 return <span className="badge bg-danger"> {cell.priority} </span>;
+        //             case "Medium":
+        //                 return <span className="badge bg-info"> {cell.priority} </span>;
+        //             case "Low":
+        //                 return <span className="badge bg-success"> {cell.priority} </span>;
+        //             default:
+        //                 return <span className="badge bg-danger"> {cell.priority} </span>;
+        //         }
+        //     },
+        // },
+        // {
+        //     name: <span className='font-weight-bold fs-13'>Action</span>,
+        //     sortable: true,
 
-            cell: () => {
-                return (
-                    <UncontrolledDropdown className="dropdown d-inline-block">
-                        <DropdownToggle className="btn btn-soft-secondary btn-sm" tag="button">
-                            <i className="ri-more-fill align-middle"></i>
-                        </DropdownToggle>
-                        <DropdownMenu className="dropdown-menu-end">
-                            <DropdownItem href="#!"><i className="ri-eye-fill align-bottom me-2 text-muted"></i>View</DropdownItem>
-                            <DropdownItem className='edit-item-btn'><i className="ri-pencil-fill align-bottom me-2 text-muted"></i>Edit</DropdownItem>
-                            <DropdownItem className='remove-item-btn'> <i className="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete </DropdownItem>
-                        </DropdownMenu>
-                    </UncontrolledDropdown>
-                );
-            },
-        },
+        //     cell: () => {
+        //         return (
+        //             <UncontrolledDropdown className="dropdown d-inline-block">
+        //                 <DropdownToggle className="btn btn-soft-secondary btn-sm" tag="button">
+        //                     <i className="ri-more-fill align-middle"></i>
+        //                 </DropdownToggle>
+        //                 <DropdownMenu className="dropdown-menu-end">
+        //                     <DropdownItem href="#!"><i className="ri-eye-fill align-bottom me-2 text-muted"></i>View</DropdownItem>
+        //                     <DropdownItem className='edit-item-btn'><i className="ri-pencil-fill align-bottom me-2 text-muted"></i>Edit</DropdownItem>
+        //                     <DropdownItem className='remove-item-btn'> <i className="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete </DropdownItem>
+        //                 </DropdownMenu>
+        //             </UncontrolledDropdown>
+        //         );
+        //     },
+        // },
     ];
 
     const data = [
@@ -142,8 +142,8 @@ const BasicTable = () => {
             assigned: "Alexis Clarke",
             createdBy: "Joseph Parker",
             createDate: "03 Oct, 2021",
-            status: "Re-open",
-            priority: "High",
+            // status: "Re-open",
+            // priority: "High",
         },
         {
             srNo: "02",
@@ -154,8 +154,8 @@ const BasicTable = () => {
             assigned: "Admin",
             createdBy: "Mary Rucker",
             createDate: "05 Oct, 2021",
-            status: "On-Hold",
-            priority: "Medium",
+            // status: "On-Hold",
+            // priority: "Medium",
         },
         {
             srNo: "03",
@@ -166,8 +166,8 @@ const BasicTable = () => {
             assigned: "Admin",
             createdBy: "Tonya Noble",
             createDate: "27 April, 2022",
-            status: "Closed",
-            priority: "Low",
+            // status: "Closed",
+            // priority: "Low",
         },
         {
             srNo: "04",
@@ -178,8 +178,8 @@ const BasicTable = () => {
             assigned: "Alexis Clarke",
             createdBy: "Joseph Parker",
             createDate: "14 June, 2021",
-            status: "Inprogress",
-            priority: "Medium",
+            // status: "Inprogress",
+            // priority: "Medium",
         },
         {
             srNo: "05",
@@ -190,8 +190,8 @@ const BasicTable = () => {
             assigned: "Admin",
             createdBy: "Donald Palmer",
             createDate: "25 June, 2021",
-            status: "Closed",
-            priority: "Low",
+            // status: "Closed",
+            // priority: "Low",
         },
         {
             srNo: "06",
@@ -202,8 +202,8 @@ const BasicTable = () => {
             assigned: "Jennifer Carter",
             createdBy: "Mary Rucker",
             createDate: "14 Aug, 2021",
-            status: "Inprogress",
-            priority: "Medium",
+            // status: "Inprogress",
+            // priority: "Medium",
         },
         {
             srNo: "07",
@@ -214,8 +214,8 @@ const BasicTable = () => {
             assigned: "Admin",
             createdBy: "James Morris",
             createDate: "12 March, 2022",
-            status: "Open",
-            priority: "High",
+            // status: "Open",
+            // priority: "High",
         },
         {
             srNo: "08",
@@ -226,8 +226,8 @@ const BasicTable = () => {
             assigned: "Nancy Martino",
             createdBy: "Nathan Cole",
             createDate: "28 Feb, 2022",
-            status: "On-Hold",
-            priority: "Low",
+            // status: "On-Hold",
+            // priority: "Low",
         },
         {
             srNo: "09",
@@ -238,8 +238,8 @@ const BasicTable = () => {
             assigned: "Admin",
             createdBy: "Grace Coles",
             createDate: "07 Jan, 2022",
-            status: "New",
-            priority: "High",
+            // status: "New",
+            // priority: "High",
         },
         {
             srNo: "10",
@@ -250,8 +250,8 @@ const BasicTable = () => {
             assigned: "Alexis Clarke",
             createdBy: "Freda",
             createDate: "16 Aug, 2021",
-            status: "Closed",
-            priority: "Medium",
+            // status: "Closed",
+            // priority: "Medium",
         },
     ];
     return (
@@ -547,62 +547,62 @@ const ScrollHorizontal = () => {
             selector: row => row.createDate,
             sortable: true
         },
-        {
-            name: <span className='font-weight-bold fs-13'>Status</span>,
-            sortable: true,
-            selector: (cell) => {
-                switch (cell.status) {
-                    case "Re-open":
-                        return <span className="badge badge-soft-info"> {cell.status} </span>;
-                    case "On-Hold":
-                        return <span className="badge badge-soft-secondary"> {cell.status} </span>;
-                    case "Closed":
-                        return <span className="badge badge-soft-danger"> {cell.status} </span>;
-                    case "Inprogress":
-                        return <span className="badge badge-soft-warning"> {cell.status} </span>;
-                    case "Open":
-                        return <span className="badge badge-soft-primary"> {cell.status} </span>;
-                    case "New":
-                        return <span className="badge badge-soft-success"> {cell.status} </span>;
-                    default:
-                        return <span className="badge badge-soft-success"> {cell.status} </span>;
-                }
-            },
-        },
-        {
-            name: <span className='font-weight-bold fs-13'>Priority</span>,
-            sortable: true,
-            selector: (cell) => {
-                switch (cell.priority) {
-                    case "High":
-                        return <span className="badge bg-danger"> {cell.priority} </span>;
-                    case "Medium":
-                        return <span className="badge bg-info"> {cell.priority} </span>;
-                    case "Low":
-                        return <span className="badge bg-success"> {cell.priority} </span>;
-                    default:
-                        return <span className="badge bg-danger"> {cell.priority} </span>;
-                }
-            },
-        },
-        {
-            name: <span className='font-weight-bold fs-13'>Action</span>,
-            sortable: true,
-            cell: () => {
-                return (
-                    <UncontrolledDropdown className="dropdown d-inline-block">
-                        <DropdownToggle className="btn btn-soft-secondary btn-sm" tag="button">
-                            <i className="ri-more-fill align-middle"></i>
-                        </DropdownToggle>
-                        <DropdownMenu className="dropdown-menu-end">
-                            <DropdownItem href="#!"><i className="ri-eye-fill align-bottom me-2 text-muted"></i>View</DropdownItem>
-                            <DropdownItem className='edit-item-btn'><i className="ri-pencil-fill align-bottom me-2 text-muted"></i>Edit</DropdownItem>
-                            <DropdownItem className='remove-item-btn'> <i className="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete </DropdownItem>
-                        </DropdownMenu>
-                    </UncontrolledDropdown>
-                );
-            },
-        },
+        // {
+        //     name: <span className='font-weight-bold fs-13'>Status</span>,
+        //     sortable: true,
+        //     selector: (cell) => {
+        //         switch (cell.status) {
+        //             case "Re-open":
+        //                 return <span className="badge badge-soft-info"> {cell.status} </span>;
+        //             case "On-Hold":
+        //                 return <span className="badge badge-soft-secondary"> {cell.status} </span>;
+        //             case "Closed":
+        //                 return <span className="badge badge-soft-danger"> {cell.status} </span>;
+        //             case "Inprogress":
+        //                 return <span className="badge badge-soft-warning"> {cell.status} </span>;
+        //             case "Open":
+        //                 return <span className="badge badge-soft-primary"> {cell.status} </span>;
+        //             case "New":
+        //                 return <span className="badge badge-soft-success"> {cell.status} </span>;
+        //             default:
+        //                 return <span className="badge badge-soft-success"> {cell.status} </span>;
+        //         }
+        //     },
+        // },
+        // {
+        //     name: <span className='font-weight-bold fs-13'>Priority</span>,
+        //     sortable: true,
+        //     selector: (cell) => {
+        //         switch (cell.priority) {
+        //             case "High":
+        //                 return <span className="badge bg-danger"> {cell.priority} </span>;
+        //             case "Medium":
+        //                 return <span className="badge bg-info"> {cell.priority} </span>;
+        //             case "Low":
+        //                 return <span className="badge bg-success"> {cell.priority} </span>;
+        //             default:
+        //                 return <span className="badge bg-danger"> {cell.priority} </span>;
+        //         }
+        //     },
+        // },
+        // {
+        //     name: <span className='font-weight-bold fs-13'>Action</span>,
+        //     sortable: true,
+        //     cell: () => {
+        //         return (
+        //             <UncontrolledDropdown className="dropdown d-inline-block">
+        //                 <DropdownToggle className="btn btn-soft-secondary btn-sm" tag="button">
+        //                     <i className="ri-more-fill align-middle"></i>
+        //                 </DropdownToggle>
+        //                 <DropdownMenu className="dropdown-menu-end">
+        //                     <DropdownItem href="#!"><i className="ri-eye-fill align-bottom me-2 text-muted"></i>View</DropdownItem>
+        //                     <DropdownItem className='edit-item-btn'><i className="ri-pencil-fill align-bottom me-2 text-muted"></i>Edit</DropdownItem>
+        //                     <DropdownItem className='remove-item-btn'> <i className="ri-delete-bin-fill align-bottom me-2 text-muted"></i> Delete </DropdownItem>
+        //                 </DropdownMenu>
+        //             </UncontrolledDropdown>
+        //         );
+        //     },
+        // },
     ];
 
     const data = [

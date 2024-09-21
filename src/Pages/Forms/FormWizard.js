@@ -21,7 +21,7 @@ import classnames from "classnames";
 import { Link } from "react-router-dom";
 
 //Import Breadcrumb
-import Breadcrumbs from "../../components/Common/Breadcrumb";
+// import Breadcrumbs from "../../components/Common/Breadcrumb";
 
 const FormWizard = () => {
   document.title = "Form Wizard | Upzet - React Admin & Dashboard Template";
@@ -55,7 +55,7 @@ const FormWizard = () => {
     <React.Fragment>
       <div className="page-content">
         <Container fluid={true}>
-          <Breadcrumbs title="Forms" breadcrumbItem="Form Wizard" />
+          {/* <Breadcrumbs title="Forms" breadcrumbItem="Form Wizard" /> */}
 
           <Row>
             <Col lg="12">

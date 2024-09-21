@@ -4,16 +4,16 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
-import LanguageDropdown from "../../components/Common/TopbarDropdown/LanguageDropdown";
+// import LanguageDropdown from "../../components/Common/TopbarDropdown/LanguageDropdown";
 import NotificationDropdown from "../../components/Common/TopbarDropdown/NotificationDropdown";
 
 //i18n
 import { withTranslation } from "react-i18next";
 
 //import images
-import logoSm from "../../assets/images/logo-sm.png";
-import logoDark from "../../assets/images/logo-dark.png";
-import logoLight from "../../assets/images/logo-light.png";
+// import logoSm from "../../assets/images/logo-sm.png";
+// import logoDark from "../../assets/images/logo-dark.png";
+// import logoLight from "../../assets/images/logo-light.png";
 
 // Redux Store
 import {
@@ -22,37 +22,11 @@ import {
   changeSidebarType,
 } from "../../store/actions";
 import ProfileMenu from "../../components/Common/TopbarDropdown/ProfileMenu";
-import AppsDropdown from "../../components/Common/TopbarDropdown/AppsDropdown";
+// import AppsDropdown from "../../components/Common/TopbarDropdown/AppsDropdown";
 
 const Header = (props) => {
-  const [search, setsearch] = useState(false);
-
-  function toggleFullscreen() {
-    if (
-      !document.fullscreenElement &&
-      /* alternative standard method */ !document.mozFullScreenElement &&
-      !document.webkitFullscreenElement
-    ) {
-      // current working methods
-      if (document.documentElement.requestFullscreen) {
-        document.documentElement.requestFullscreen();
-      } else if (document.documentElement.mozRequestFullScreen) {
-        document.documentElement.mozRequestFullScreen();
-      } else if (document.documentElement.webkitRequestFullscreen) {
-        document.documentElement.webkitRequestFullscreen(
-          Element.ALLOW_KEYBOARD_INPUT
-        );
-      }
-    } else {
-      if (document.cancelFullScreen) {
-        document.cancelFullScreen();
-      } else if (document.mozCancelFullScreen) {
-        document.mozCancelFullScreen();
-      } else if (document.webkitCancelFullScreen) {
-        document.webkitCancelFullScreen();
-      }
-    }
-  }
+  // const [search, setSearch] = useState(false);
+  const [search] = useState(false);
 
   return (
     <React.Fragment>
@@ -62,19 +36,19 @@ const Header = (props) => {
             <div className="navbar-brand-box text-center">
               <Link to="/" className="logo logo-dark">
                 <span className="logo-sm">
-                  <img src={logoSm} alt="logo-sm-dark" height="22" />
+                  {/* <img src={logoSm} alt="logo-sm-dark" height="22" /> */}
                 </span>
                 <span className="logo-lg">
-                  <img src={logoDark} alt="logo-dark" height="24" />
+                  {/* <img src={logoDark} alt="logo-dark" height="24" /> */}
                 </span>
               </Link>
 
               <Link to="/" className="logo logo-light">
                 <span className="logo-sm">
-                  <img src={logoSm} alt="logo-sm-light" height="22" />
+                  {/* <img src={logoSm} alt="logo-sm-light" height="22" /> */}
                 </span>
                 <span className="logo-lg">
-                  <img src={logoLight} alt="logo-light" height="24" />
+                  {/* <img src={logoLight} alt="logo-light" height="24" /> */}
                 </span>
               </Link>
             </div>
@@ -105,16 +79,16 @@ const Header = (props) => {
 
           <div className="d-flex">
             <div className="dropdown d-inline-block d-lg-none ms-2">
-              <button
+              {/* <button
                 onClick={() => {
-                  setsearch(!search);
+                  setSearch(!search);
                 }}
                 type="button"
                 className="btn header-item noti-icon "
                 id="page-header-search-dropdown"
               >
                 <i className="ri-search-line" />
-              </button>
+              </button> */}
 
               <div
                 className={
@@ -144,12 +118,12 @@ const Header = (props) => {
               </div>
             </div>
 
-            <LanguageDropdown />
+            {/* <LanguageDropdown />
 
-            <AppsDropdown />
+            <AppsDropdown /> */}
 
             <div className="dropdown d-none d-lg-inline-block ms-1">
-              <button
+              {/* <button
                 type="button"
                 onClick={() => {
                   toggleFullscreen();
@@ -158,7 +132,7 @@ const Header = (props) => {
                 data-toggle="fullscreen"
               >
                 <i className="ri-fullscreen-line" />
-              </button>
+              </button> */}
             </div>
 
             <NotificationDropdown />
@@ -171,12 +145,12 @@ const Header = (props) => {
                 props.showRightSidebarAction(!props.showRightSidebar);
               }}
             >
-              <button
+              {/* <button
                 type="button"
                 className="btn header-item noti-icon right-bar-toggle waves-effect"
               >
                 <i className="mdi mdi-cog"></i>
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
@@ -184,7 +158,6 @@ const Header = (props) => {
     </React.Fragment>
   );
 };
-
 Header.propTypes = {
   changeSidebarType: PropTypes.func,
   leftMenu: PropTypes.any,

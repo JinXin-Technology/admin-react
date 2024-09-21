@@ -7,21 +7,18 @@ import {
   DropdownItem,
 } from "reactstrap";
 
-//i18n
+// i18n
 import { withTranslation } from "react-i18next";
 // Redux
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import withRouter from "../withRouter";
 
-// users
-import user1 from "../../../assets/images/users/avatar-1.jpg";
-
 const ProfileMenu = props => {
   // Declare a new state variable, which we'll call "menu"
   const [menu, setMenu] = useState(false);
 
-  const [username, setusername] = useState("Admin");
+  const [, setusername] = useState("Admin");
 
   useEffect(() => {
     if (localStorage.getItem("authUser")) {
@@ -50,32 +47,25 @@ const ProfileMenu = props => {
           id="page-header-user-dropdown"
           tag="button"
         >
-          <img
-            className="rounded-circle header-profile-user"
-            src={user1}
-            alt="Header Avatar"
-          />
-          <span className="d-none d-xl-inline-block ms-2 me-2">{username}</span>
-          <i className="mdi mdi-chevron-down d-none d-xl-inline-block" />
+          <div
+            className="rounded-circle header-profile-user d-flex align-items-center justify-content-center"
+            style={{
+              width: "40px",
+              height: "40px",
+              backgroundColor: "#f0f0f5",
+              color: "#000",
+              fontWeight: "bold",
+              fontSize: "20px"
+            }}
+          >
+            A
+          </div>
         </DropdownToggle>
         <DropdownMenu className="dropdown-menu-end">
           <DropdownItem tag="a" href="/userprofile">
             {" "}
             <i className="ri-user-line align-middle me-2" />
             {props.t("Profile")}{" "}
-          </DropdownItem>
-          <DropdownItem tag="a" href="#">
-            <i className="ri-wallet-2-line align-middle me-2" />
-            {props.t("My Wallet")}
-          </DropdownItem>
-          <DropdownItem tag="a" href="#">
-            <span className="badge bg-success float-end mt-1">11</span>
-            <i className="ri-settings-2-line align-middle me-2" />
-            {props.t("Settings")}
-          </DropdownItem>
-          <DropdownItem tag="a" href="auth-lock-screen">
-            <i className="ri-lock-unlock-line align-middle me-2" />
-            {props.t("Lock screen")}
           </DropdownItem>
           <div className="dropdown-divider" />
           <Link to="/logout" className="dropdown-item">

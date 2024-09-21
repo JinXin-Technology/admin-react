@@ -1,20 +1,21 @@
 import React from 'react';
 import { Card, CardBody, CardHeader, Col, Container, Row } from 'reactstrap';
-import Breadcrumbs from "../../../components/Common/Breadcrumb";
+// import Breadcrumbs from "../../../components/Common/Breadcrumb";
 
-import { BasicTable, ScrollVertical, ScrollHorizontal, AlternativePagination, FixedHeaderDatatables, ModalDataDatatables, AjaxDatatables } from './datatableCom';
+// import { BasicTable, ScrollVertical, ScrollHorizontal, AlternativePagination, FixedHeaderDatatables, ModalDataDatatables, AjaxDatatables } from './datatableCom';
+import { BasicTable } from './datatableCom';
 
 const DataTables = () => {
     return (
         <React.Fragment>
             <div className="page-content">
                 <Container fluid>
-                    <Breadcrumbs title="Tables" breadcrumbItem="Datatables" />
+                    {/* <Breadcrumbs title="Tables" breadcrumbItem="Datatables" /> */}
                     <Row>
                         <Col lg={12}>
                             <Card>
                                 <CardHeader>
-                                    <h5 className="card-title mb-0">Basic Datatables</h5>
+                                    <h5 className="card-title mb-0">Historical Flights</h5>
                                 </CardHeader>
                                 <CardBody>
                                     <BasicTable />
@@ -23,7 +24,7 @@ const DataTables = () => {
                         </Col>
                     </Row>
 
-                    <Row>
+                    {/* <Row>
                         <Col lg={12}>
                             <Card>
                                 <CardHeader>
@@ -34,9 +35,9 @@ const DataTables = () => {
                                 </CardBody>
                             </Card>
                         </Col>
-                    </Row>
+                    </Row> */}
 
-                    <Row>
+                    {/* <Row>
                         <Col lg={12}>
                             <Card>
                                 <CardHeader>
@@ -47,9 +48,9 @@ const DataTables = () => {
                                 </CardBody>
                             </Card>
                         </Col>
-                    </Row>
+                    </Row> */}
 
-                    <Row>
+                    {/* <Row>
                         <Col lg={12}>
                             <Card>
                                 <CardHeader>
@@ -60,8 +61,8 @@ const DataTables = () => {
                                 </CardBody>
                             </Card>
                         </Col>
-                    </Row>
-                    <Row>
+                    </Row> */}
+                    {/* <Row>
                         <Col lg={12}>
                             <Card>
                                 <CardHeader>
@@ -72,9 +73,9 @@ const DataTables = () => {
                                 </CardBody>
                             </Card>
                         </Col>
-                    </Row>
+                    </Row> */}
 
-                    <Row>
+                    {/* <Row>
                         <Col lg={12}>
                             <Card>
                                 <CardHeader>
@@ -85,8 +86,8 @@ const DataTables = () => {
                                 </CardBody>
                             </Card>
                         </Col>
-                    </Row>
-
+                    </Row> */}
+{/* 
                     <Row>
                         <Col lg={12}>
                             <Card>
@@ -98,7 +99,7 @@ const DataTables = () => {
                                 </CardBody>
                             </Card>
                         </Col>
-                    </Row>
+                    </Row> */}
                 </Container>
             </div>
         </React.Fragment>

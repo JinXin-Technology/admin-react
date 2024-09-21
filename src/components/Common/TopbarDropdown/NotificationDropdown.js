@@ -5,8 +5,8 @@ import { Dropdown, DropdownToggle, DropdownMenu, Row, Col } from "reactstrap";
 import SimpleBar from "simplebar-react";
 
 //Import images
-import avatar3 from "../../../assets/images/users/avatar-3.jpg";
-import avatar4 from "../../../assets/images/users/avatar-4.jpg";
+// import avatar3 from "../../../assets/images/users/avatar-3.jpg";
+// import avatar4 from "../../../assets/images/users/avatar-4.jpg";
 
 //i18n
 import { withTranslation } from "react-i18next";
@@ -52,30 +52,16 @@ const NotificationDropdown = props => {
               <div className="d-flex">
                 <div className="flex-shrink-0 me-3">
                   <div className="avatar-xs">
-                    <span className="avatar-title bg-primary rounded-circle font-size-16">
-                      <i className="ri-shopping-cart-line"></i>
+                    <span className="avatar-title bg-danger rounded-circle font-size-16">
+                    <i className="ri-checkbox-circle-line"></i>
                     </span>
                   </div>
                 </div>
                 <div className="flex-grow-1">
-                  <h6 className="mb-1">Your order is placed</h6>
+                  <h6 className="mb-1">Hostile drone detected!</h6>
                   <div className="font-size-12 text-muted">
-                    <p className="mb-1">If several languages coalesce the grammar</p>
+                    {/* <p className="mb-1">If several languages coalesce the grammar</p> */}
                     <p className="mb-0"><i className="mdi mdi-clock-outline"></i> 3 min ago</p>
-                  </div>
-                </div>
-              </div>
-            </Link>
-            <Link to="" className="text-reset notification-item">
-              <div className="d-flex">
-                <div className="flex-shrink-0 me-3">
-                  <img src={avatar3} className="rounded-circle avatar-xs" alt="user-pic" />
-                </div>
-                <div className="flex-grow-1">
-                  <h6 className="mb-1">James Lemire</h6>
-                  <div className="font-size-12 text-muted">
-                    <p className="mb-1">It will seem like simplified English.</p>
-                    <p className="mb-0"><i className="mdi mdi-clock-outline"></i> 1 hours ago</p>
                   </div>
                 </div>
               </div>
@@ -84,15 +70,15 @@ const NotificationDropdown = props => {
               <div className="d-flex">
                 <div className="flex-shrink-0 me-3">
                   <div className="avatar-xs">
-                    <span className="avatar-title bg-success rounded-circle font-size-16">
-                      <i className="ri-checkbox-circle-line"></i>
+                    <span className="avatar-title bg-danger rounded-circle font-size-16">
+                    <i className="ri-checkbox-circle-line"></i>
                     </span>
                   </div>
                 </div>
                 <div className="flex-grow-1">
-                  <h6 className="mb-1">Your item is shipped</h6>
+                  <h6 className="mb-1">Hostile drone detected!</h6>
                   <div className="font-size-12 text-muted">
-                    <p className="mb-1">If several languages coalesce the grammar</p>
+                    {/* <p className="mb-1">If several languages coalesce the grammar</p> */}
                     <p className="mb-0"><i className="mdi mdi-clock-outline"></i> 3 min ago</p>
                   </div>
                 </div>
@@ -101,13 +87,35 @@ const NotificationDropdown = props => {
             <Link to="" className="text-reset notification-item">
               <div className="d-flex">
                 <div className="flex-shrink-0 me-3">
-                  <img src={avatar4} className="rounded-circle avatar-xs" alt="user-pic" />
+                  <div className="avatar-xs">
+                    <span className="avatar-title bg-primary rounded-circle font-size-16">
+                      <i className="ri-checkbox-circle-line"></i>
+                    </span>
+                  </div>
                 </div>
                 <div className="flex-grow-1">
-                  <h6 className="mb-1">Salena Layfield</h6>
+                  <h6 className="mb-1">Schedule classification is created</h6>
                   <div className="font-size-12 text-muted">
-                    <p className="mb-1">As a skeptical Cambridge friend of mine occidental.</p>
-                    <p className="mb-0"><i className="mdi mdi-clock-outline"></i> 1 hour ago</p>
+                    {/* <p className="mb-1">If several languages coalesce the grammar</p> */}
+                    <p className="mb-0"><i className="mdi mdi-clock-outline"></i> 3 min ago</p>
+                  </div>
+                </div>
+              </div>
+            </Link>
+            <Link to="" className="text-reset notification-item">
+            <div className="d-flex">
+                <div className="flex-shrink-0 me-3">
+                  <div className="avatar-xs">
+                    <span className="avatar-title bg-warning rounded-circle font-size-16">
+                    <i className="ri-checkbox-circle-line"></i>
+                    </span>
+                  </div>
+                </div>
+                <div className="flex-grow-1">
+                  <h6 className="mb-1">Unknown drone detected!</h6>
+                  <div className="font-size-12 text-muted">
+                    {/* <p className="mb-1">If several languages coalesce the grammar</p> */}
+                    <p className="mb-0"><i className="mdi mdi-clock-outline"></i> 3 min ago</p>
                   </div>
                 </div>
               </div>

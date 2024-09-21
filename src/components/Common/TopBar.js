@@ -1,17 +1,17 @@
 import React from "react";
 
-import logosm from "../../assets/images/logo-sm.png";
-import logodark from "../../assets/images/logo-dark.png";
-import logolight from "../../assets/images/logo-light.png";
+// import logosm from "../../assets/images/logo-sm.png";
+// import logodark from "../../assets/images/logo-dark.png";
+// import logolight from "../../assets/images/logo-light.png";
 
 // import component
 import ProfileMenu from "./TopbarDropdown/ProfileMenu";
 
 import NotificationDropdown from "./TopbarDropdown/NotificationDropdown";
 
-import LanguageDropdown from "./TopbarDropdown/LanguageDropdown";
+// import LanguageDropdown from "./TopbarDropdown/LanguageDropdown";
 
-import AppsDropdown from "./TopbarDropdown/AppsDropdown";
+// import AppsDropdown from "./TopbarDropdown/AppsDropdown";
 
 const TopBar = () => {
   return (
@@ -20,21 +20,21 @@ const TopBar = () => {
         <div className="navbar-header">
           <div className="d-flex">
             <div className="navbar-brand-box text-center">
-              <a href="#" className="logo logo-dark">
+              <a href="/" className="logo logo-dark">
                 <span className="logo-sm">
-                  <img src={logosm} alt="logo-sm-dark" height="22" />
+                  {/* <img src={logosm} alt="logo-sm-dark" height="22" /> */}
                 </span>
                 <span className="logo-lg">
-                  <img src={logodark} alt="logo-dark" height="24" />
+                  {/* <img src={logodark} alt="logo-dark" height="24" /> */}
                 </span>
               </a>
 
-              <a href="#" className="logo logo-light">
+              <a href="/" className="logo logo-light">
                 <span className="logo-sm">
-                  <img src={logosm} alt="logo-sm-light" height="22" />
+                  {/* <img src={logosm} alt="logo-sm-light" height="22" /> */}
                 </span>
                 <span className="logo-lg">
-                  <img src={logolight} alt="logo-light" height="24" />
+                  {/* <img src={logolight} alt="logo-light" height="24" /> */}
                 </span>
               </a>
             </div>
@@ -48,20 +48,20 @@ const TopBar = () => {
             </button>
 
             <form className="app-search d-none d-lg-block">
-              <div className="position-relative">
+              {/* <div className="position-relative">
                 <input
                   type="text"
                   className="form-control"
                   placeholder="Search..."
                 />
                 <span className="ri-search-line"></span>
-              </div>
+              </div> */}
             </form>
           </div>
 
           <div className="d-flex">
-            <LanguageDropdown />
-            <AppsDropdown />
+            {/* <LanguageDropdown />
+            <AppsDropdown /> */}
             <div className="dropdown d-none d-lg-inline-block ms-1">
               <button
                 type="button"
@@ -88,5 +88,4 @@ const TopBar = () => {
     </React.Fragment>
   );
 };
-
 export default TopBar;

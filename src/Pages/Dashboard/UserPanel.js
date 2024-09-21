@@ -4,6 +4,7 @@ import { Card, CardBody, Col, Row } from "reactstrap";
 import RadialChart1 from "./userpanelChart1";
 import RadialChart2 from "./userpanelChart2";
 import RadialChart3 from "./userpanelChart3";
+import RadialChart4 from "./userpanelChart4";
 
 const UserPanel = () => {
   return (
@@ -20,15 +21,15 @@ const UserPanel = () => {
                 </div>
 
                 <div className="flex-grow-1 overflow-hidden">
-                  <p className="mb-1">Users</p>
-                  <h5 className="mb-3">2.2k</h5>
+                  <p className="mb-1">Unknown Drones</p>
+                  <h5 className="mb-3">38</h5>
                   <p className="text-truncate mb-0">
                     <span className="text-success me-2">
                       {" "}
-                      0.02%{" "}
+                      12%{" "}
                       <i className="ri-arrow-right-up-line align-bottom ms-1"></i>
                     </span>{" "}
-                    From previous
+                    {/* From previous */}
                   </p>
                 </div>
               </div>
@@ -49,15 +50,15 @@ const UserPanel = () => {
                 </div>
 
                 <div className="flex-grow-1 overflow-hidden">
-                  <p className="mb-1">Views per minute</p>
-                  <h5 className="mb-3">50</h5>
+                  <p className="mb-1">Known Drones</p>
+                  <h5 className="mb-3">5</h5>
                   <p className="text-truncate mb-0">
                     <span className="text-success me-2">
                       {" "}
                       1.7%{" "}
                       <i className="ri-arrow-right-up-line align-bottom ms-1"></i>
                     </span>{" "}
-                    From previous
+                    {/* From previous */}
                   </p>
                 </div>
               </div>
@@ -78,49 +79,45 @@ const UserPanel = () => {
                 </div>
 
                 <div className="flex-grow-1 overflow-hidden">
-                  <p className="mb-1">Bounce Rate</p>
+                  <p className="mb-1">Friendly Drones</p>
                   <h5 className="mb-3">24.03 %</h5>
-                  <p className="text-truncate mb-0">
-                    <span className="text-danger me-2">
-                      {" "}
-                      0.01%{" "}
-                      <i className="ri-arrow-right-down-line align-bottom ms-1"></i>
-                    </span>{" "}
-                    From previous
-                  </p>
-                </div>
-              </div>
-            </CardBody>
-          </Card>
-        </Col>
-
-        <Col xl={3} sm={6}>
-          <Card>
-            <CardBody>
-              <div className="d-flex text-muted">
-                <div className="flex-shrink-0 me-3 align-self-center">
-                  <div className="avatar-sm">
-                    <div className="avatar-title bg-light rounded-circle text-primary font-size-20">
-                      <i className="ri-group-line"></i>
-                    </div>
-                  </div>
-                </div>
-                <div className="flex-grow-1 overflow-hidden">
-                  <p className="mb-1">New Visitors</p>
-                  <h5 className="mb-3">435</h5>
                   <p className="text-truncate mb-0">
                     <span className="text-success me-2">
                       {" "}
                       0.01%{" "}
-                      <i className="ri-arrow-right-up-line align-bottom ms-1"></i>
+                      <i className="ri-arrow-right-down-line align-bottom ms-1"></i>
                     </span>{" "}
-                    From previous
+                    {/* From previous */}
                   </p>
                 </div>
               </div>
             </CardBody>
           </Card>
         </Col>
+        <Col xl={3} sm={6}>
+        <Card>
+    <CardBody>
+      <div className="d-flex text-muted">
+        <div className="flex-shrink-0 me-3 align-self-center">
+          <div id="radialchart-4" className="apex-charts" dir="ltr">
+            <RadialChart4 /> {/* RadialChart for Hostile Drones */}
+          </div>
+        </div>
+        <div className="flex-grow-1 overflow-hidden">
+          <p className="mb-1">Hostile Drones</p>
+          <h5 className="mb-3">10</h5>
+          <p className="text-truncate mb-0">
+            <span className="text-danger me-2">
+              45% <i className="ri-arrow-right-up-line align-bottom ms-1"></i>
+            </span>
+            {/* From previous */}
+          </p>
+        </div>
+      </div>
+    </CardBody>
+  </Card>
+</Col>
+
       </Row>
     </React.Fragment>
   );
