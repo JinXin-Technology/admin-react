@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {
   Dropdown,
   DropdownToggle,
-  // DropdownMenu,
+  DropdownMenu,
   // DropdownItem,
 } from "reactstrap";
 
@@ -11,7 +11,7 @@ import {
 import { withTranslation } from "react-i18next";
 // Redux
 import { connect } from "react-redux";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import withRouter from "../withRouter";
 
 const ProfileMenu = props => {
@@ -61,18 +61,18 @@ const ProfileMenu = props => {
             A
           </div>
         </DropdownToggle>
-        {/* <DropdownMenu className="dropdown-menu-end">
-          <DropdownItem tag="a" href="/userprofile">
+        <DropdownMenu className="dropdown-menu-end">
+          {/* <DropdownItem tag="a" href="/userprofile">
             {" "}
             <i className="ri-user-line align-middle me-2" />
             {props.t("Profile")}{" "}
-          </DropdownItem>
-          <div className="dropdown-divider" />
+          </DropdownItem> */}
+          {/* <div className="dropdown-divider" /> */}
           <Link to="/logout" className="dropdown-item">
             <i className="ri-shut-down-line align-middle me-2 text-danger" />
             <span>{props.t("Logout")}</span>
           </Link>
-        </DropdownMenu> */}
+        </DropdownMenu>
       </Dropdown>
     </React.Fragment>
   );

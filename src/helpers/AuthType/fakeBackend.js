@@ -10,7 +10,8 @@ let users = [
     username: "admin",
     role: "admin",
     password: "123456",
-    email: "admin@Themesdesign.com",
+    // email: "admin@Themesdesign.com",
+    email: "admin@glamco.sg",
   },
 ];
 

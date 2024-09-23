@@ -43,10 +43,10 @@ const Login = () => {
                       </Link>
                     </div>
                     <h4 className="font-size-18 text-muted mt-2 text-center">
-                      Welcome Back !
+                      {/* Welcome Back ! */}
                     </h4>
                     <p className="mb-5 text-center">
-                      Sign in to continue to Upzet.
+                      {/* Sign in to continue to Upzet. */}
                     </p>
                     <Form className="form-horizontal" action="#">
                       <Row>
@@ -60,7 +60,8 @@ const Login = () => {
                               className="form-control"
                               id="username"
                               placeholder="Enter username"
-                              defaultValue="admin@themesbrand.com"
+                              // defaultValue="admin@themesbrand.com"
+                              defaultValue="admin@glamco.sg"
                             />
                           </div>
                           <div className="mb-4">
@@ -91,7 +92,7 @@ const Login = () => {
                                   className="form-label form-check-label"
                                   htmlFor="customControlInline"
                                 >
-                                  Remember me
+                                  {/* Remember me */}
                                 </label>
                               </div>
                             </Col>
@@ -101,8 +102,8 @@ const Login = () => {
                                   to="/auth-recoverpw"
                                   className="text-muted"
                                 >
-                                  <i className="mdi mdi-lock"></i> Forgot your
-                                  password?
+                                  {/* <i className="mdi mdi-lock"></i> Forgot your
+                                  password? */}
                                 </Link>
                               </div>
                             </Col>
@@ -123,7 +124,7 @@ const Login = () => {
                 </CardBody>
               </Card>
               <div className="mt-5 text-center">
-                <p className="text-white-50">
+                {/* <p className="text-white-50">
                   Don't have an account ?{" "}
                   <Link to="/auth-register" className="fw-medium text-primary">
                     {" "}
@@ -133,7 +134,7 @@ const Login = () => {
                 <p className="text-white-50">
                   © {new Date().getFullYear()} Upzet. Crafted with{" "}
                   <i className="mdi mdi-heart text-danger"></i> by Themesdesign
-                </p>
+                </p> */}
               </div>
             </Col>
           </Row>

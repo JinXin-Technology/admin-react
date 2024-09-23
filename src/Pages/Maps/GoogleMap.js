@@ -376,13 +376,13 @@ const GoogleMapComponent = (props) => {
                                             />
 
                                             {/* Radar Circle on the map */}
-                                            <Circle
+                                            {/* <Circle
                                                 center={currentLocation}
                                                 radius={5000}
                                                 strokeColor="transparent"
                                                 fillColor="rgba(0, 255, 0, 0.4)"  // Increase radar circle opacity
                                                 fillOpacity={0.4}
-                                            />
+                                            /> */}
                                         </Map>
 
                                         {/* Radar Pulse Animation */}
