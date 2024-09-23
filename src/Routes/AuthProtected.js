@@ -12,7 +12,8 @@ const AuthProtected = (props) => {
 
   if (!userProfile && loading) {
     return (
-      <Navigate to={{ pathname: "/login", state: { from: props.location } }} />
+      // <Navigate to={{ pathname: "/login", state: { from: props.location } }} />
+      <Navigate to={{ pathname: "/dashboard", state: { from: props.location } }} />
     );
   }
 
