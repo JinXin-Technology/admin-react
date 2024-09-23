@@ -58,7 +58,7 @@ const NotificationDropdown = props => {
                   </div>
                 </div>
                 <div className="flex-grow-1">
-                  <h6 className="mb-1">Hostile drone detected!</h6>
+                  <h6 className="mb-1">Hostile drone detected at Sakra!</h6>
                   <div className="font-size-12 text-muted">
                     {/* <p className="mb-1">If several languages coalesce the grammar</p> */}
                     <p className="mb-0"><i className="mdi mdi-clock-outline"></i> 3 min ago</p>
@@ -76,10 +76,10 @@ const NotificationDropdown = props => {
                   </div>
                 </div>
                 <div className="flex-grow-1">
-                  <h6 className="mb-1">Hostile drone detected!</h6>
+                  <h6 className="mb-1">Hostile drone detected at Jurong Island!</h6>
                   <div className="font-size-12 text-muted">
                     {/* <p className="mb-1">If several languages coalesce the grammar</p> */}
-                    <p className="mb-0"><i className="mdi mdi-clock-outline"></i> 3 min ago</p>
+                    <p className="mb-0"><i className="mdi mdi-clock-outline"></i> 30 min ago</p>
                   </div>
                 </div>
               </div>
@@ -97,7 +97,7 @@ const NotificationDropdown = props => {
                   <h6 className="mb-1">Schedule classification is created</h6>
                   <div className="font-size-12 text-muted">
                     {/* <p className="mb-1">If several languages coalesce the grammar</p> */}
-                    <p className="mb-0"><i className="mdi mdi-clock-outline"></i> 3 min ago</p>
+                    <p className="mb-0"><i className="mdi mdi-clock-outline"></i> 1 hour ago</p>
                   </div>
                 </div>
               </div>
@@ -115,7 +115,7 @@ const NotificationDropdown = props => {
                   <h6 className="mb-1">Unknown drone detected!</h6>
                   <div className="font-size-12 text-muted">
                     {/* <p className="mb-1">If several languages coalesce the grammar</p> */}
-                    <p className="mb-0"><i className="mdi mdi-clock-outline"></i> 3 min ago</p>
+                    <p className="mb-0"><i className="mdi mdi-clock-outline"></i> 2 days ago</p>
                   </div>
                 </div>
               </div>

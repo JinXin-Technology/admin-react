@@ -24,7 +24,7 @@ import ProfileMenu from "../../components/Common/TopbarDropdown/ProfileMenu";
 // import AppsDropdown from "../../components/Common/TopbarDropdown/AppsDropdown";
 
 const Header = (props) => {
-  const [search, setsearch] = useState(false);
+  const [search] = useState(false);
 
 
   // Use the toggleFullscreen function
@@ -91,7 +91,7 @@ const Header = (props) => {
 
           <div className="d-flex">
             <div className="dropdown d-inline-block d-lg-none ms-2">
-              <button
+              {/* <button
                 onClick={() => {
                   setsearch(!search);
                 }}
@@ -100,7 +100,7 @@ const Header = (props) => {
                 id="page-header-search-dropdown"
               >
                 <i className="ri-search-line" />
-              </button>
+              </button> */}
               <div
                 className={
                   search

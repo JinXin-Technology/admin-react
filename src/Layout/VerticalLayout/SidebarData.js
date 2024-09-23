@@ -87,7 +87,16 @@ const SidebarData = [
     //         { sublabel: "Rating", link: "/ui-rating" },
     //     ],
     // },
-  
+    {
+        label: "Maps",
+        icon: "ri-map-pin-line",
+        subItem: [
+            // { sublabel: "Google Maps", link: "/maps-google" },
+            // { sublabel: "Vector Maps", link: "/maps-vector" },
+            { sublabel: "Live Map", link: "/maps-google" },
+            // { sublabel: "Geofence", link: "/maps-vector" },
+        ],
+    },
     {
         label: "Flights",
         icon: "ri-table-2",
@@ -110,8 +119,8 @@ const SidebarData = [
             // { sublabel: "Form Editor", link: "/form-editor" },
             // { sublabel: "Form File Upload", link: "/form-uploads" },
             // { sublabel: "Form X-editable", link: "/form-editors" },
-            { sublabel: "Register Drone", link: "/form-wizard" },
-            { sublabel: "Schedule Classification", link: "/form-wizard" },
+            { sublabel: "Register & Schedule Classification", link: "/form-wizard" },
+            // { sublabel: "Schedule Classification", link: "/form-wizard" },
            
         ],
     },
@@ -136,14 +145,16 @@ const SidebarData = [
     //         { sublabel: "Font Awesome", link: "/icons-fontawesome" },
     //     ],
     // },
-    {
-        label: "Maps",
-        icon: "ri-map-pin-line",
-        subItem: [
-            { sublabel: "Google Maps", link: "/maps-google" },
-            { sublabel: "Vector Maps", link: "/maps-vector" },
-        ],
-    },
+    // {
+    //     label: "Maps",
+    //     icon: "ri-map-pin-line",
+    //     subItem: [
+    //         // { sublabel: "Google Maps", link: "/maps-google" },
+    //         // { sublabel: "Vector Maps", link: "/maps-vector" },
+    //         { sublabel: "Live Map", link: "/maps-google" },
+    //         // { sublabel: "Geofence", link: "/maps-vector" },
+    //     ],
+    // },
     // {
     //     label: "Multi Level",
     //     icon: "ri-share-line",

@@ -3,15 +3,15 @@ import PropTypes from 'prop-types';
 import {
   Dropdown,
   DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
+  // DropdownMenu,
+  // DropdownItem,
 } from "reactstrap";
 
 // i18n
 import { withTranslation } from "react-i18next";
 // Redux
 import { connect } from "react-redux";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import withRouter from "../withRouter";
 
 const ProfileMenu = props => {
@@ -61,7 +61,7 @@ const ProfileMenu = props => {
             A
           </div>
         </DropdownToggle>
-        <DropdownMenu className="dropdown-menu-end">
+        {/* <DropdownMenu className="dropdown-menu-end">
           <DropdownItem tag="a" href="/userprofile">
             {" "}
             <i className="ri-user-line align-middle me-2" />
@@ -72,7 +72,7 @@ const ProfileMenu = props => {
             <i className="ri-shut-down-line align-middle me-2 text-danger" />
             <span>{props.t("Logout")}</span>
           </Link>
-        </DropdownMenu>
+        </DropdownMenu> */}
       </Dropdown>
     </React.Fragment>
   );
